@@ -60,26 +60,41 @@ body {
   font-size: 12px;
 }
 
-.tweet-text-box{
+.tweet-text-box {
   padding: 5px 84px 15px 0;
 }
 
-.tweet-metrics{
+.tweet-metrics {
   display: flex;
   justify-content: space-between;
   padding-right: 84px;
 }
 
-.metric-info{
+.metric-info {
   display: flex;
   margin-bottom: 19px;
   line-height: 15px;
 }
 
-.metrics-text{
+.metrics-text {
   font-size: 13px;
 }
 
-.metric-icon{
+.metric-icon {
   margin-right: 18px;
+}
+
+@media (max-width: 657px) {
+  .tweet {
+    width: 90%;
+  }
+
+  .tweet-text-box,
+  .tweet-metrics {
+    padding-right: 15px;
+  }
+
+  .metric-icon {
+    margin-right: 5px;
+  }
 }
