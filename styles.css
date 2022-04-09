@@ -35,6 +35,34 @@ body {
   padding: 17px 12px 0px 17px;
 }
 
+.profile-picture img:hover {
+  cursor: pointer;
+  animation-name: rotate;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotateY(0);
+  }
+  33.333% {
+    transform: rotateY(360deg);
+  }
+  33.334% {
+    transform: rotateZ(0deg);
+  }
+  66.666% {
+    transform: rotateZ(360deg);
+  }
+  66.667% {
+    transform: rotateX(0deg);
+  }
+  100% {
+    transform: rotateX(360deg);
+  }
+}
+
 .tweet-info {
   display: flex;
   height: 18px;
